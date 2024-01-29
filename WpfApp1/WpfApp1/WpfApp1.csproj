@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FeatureInterface\FeatureInterface.csproj" />
     <ProjectReference Include="..\Feature\Feature.csproj" />
     <ProjectReference Include="..\Mock\Mock.csproj" />
   </ItemGroup>

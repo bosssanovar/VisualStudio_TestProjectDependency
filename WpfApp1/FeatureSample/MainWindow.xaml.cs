@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Feature;
+using FeatureInterface;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +21,16 @@ namespace FeatureSample
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ISomeInterface obj = new Class1();
+
+            var xVal = int.Parse(x.Text);
+            var yVal = int.Parse(y.Text);
+
+            ans.Text = obj.Add(xVal, yVal).ToString();
         }
     }
 }

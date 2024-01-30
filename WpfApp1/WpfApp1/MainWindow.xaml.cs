@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using FeatureInterface;
+using Mock;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +21,16 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ISomeInterface obj = new Class1();
+
+            var v1 = int.Parse(val1.Text);
+            var v2 = int.Parse(val2.Text);
+
+            MessageBox.Show($"{obj.Add(v1, v2).ToString()}", "結果");
         }
     }
 }

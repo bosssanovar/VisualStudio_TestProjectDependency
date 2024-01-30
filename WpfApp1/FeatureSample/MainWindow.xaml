@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="x" HorizontalAlignment="Left" Margin="170,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="y" HorizontalAlignment="Left" Margin="367,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="322,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ja-jp" Text="+"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="505,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ja-jp" Text="="/></TextBlock>
+        <TextBlock x:Name="ans" HorizontalAlignment="Left" Margin="534,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ja-jp" Text="="/></TextBlock>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="330,217,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
     </Grid>
 </Window>

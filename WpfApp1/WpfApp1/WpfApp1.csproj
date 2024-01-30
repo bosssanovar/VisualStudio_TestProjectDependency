@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FeatureInterface\FeatureInterface.csproj" />
-    <ProjectReference Include="..\Mock\Mock.csproj" />
+    <ProjectReference Include="..\Feature\Feature.csproj" />
   </ItemGroup>
 
 </Project>
